@@ -1,0 +1,41 @@
+Sliding sign in/up form - PHP?
+	Sign up user
+	Login with Google?
+	Welcome back
+	Track order/shipment with google maps API
+
+Links to pages
+	Animated - Onepage?
+	Pre-loader
+About has a giant beer bottle with bubbles that slowly fill up and beer that changes colour. Timeline facts?
+Autopopulated all products page. - CSV?
+	Default under categories with main styles 
+	Sort options - Bottles/cans/kegs - Tastes, hoppy? - Sort by, new, price, best selling
+	All populated via database or CSV
+	Free orders over? banner
+	Cases/cans/merch
+Autopopulated product pages. - Database?
+	Scroll down but beer bottle stays still
+	Untapped API to gain facts
+	Facts stored in CSV
+	Facts cards
+	History and colour chart
+	Order different quantities
+		Style
+		Volume
+		ABV
+		Origin
+		Brewer
+	Rating
+	Add 12 to basket
+Animated buttons
+
+Shopping cart mini box dropdown?
+Stripe authentication?
+
+Homepage
+Parallax
+Beer of the day
+Drink responsibly
+
+Test

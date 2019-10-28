@@ -1,0 +1,27 @@
+id
+manufacturer
+product_name
+introduced
+abv
+style
+tagline
+description
+description
+
+ingredients
+alcoholunits
+
+first_brewed
+
+singlebottle
+singlebottlesize
+singlebottlecost
+crate
+cratequantity
+cratecost
+
+image_url
+ph
+ingredients
+brewers tips
+food pairing
