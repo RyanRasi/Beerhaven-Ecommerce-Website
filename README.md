@@ -1,29 +1,17 @@
-# beerhaven
+# BeerHaven
 
-## Project setup
+## Install Dependencies with
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run development server with
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Run for production with
 ```
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
