@@ -10,7 +10,9 @@ This project also uses GSAP animations to make the front-end more appealing to t
 <br>
 <br>
 To use this project you will have to create a firebase account and link your credentials in the Firebase.js file this is due to the possibility of a user going into my account and altering product records if I leave my Firebase.js file intact with the credentials.
-
+<br>
+<br>
+Live link - in progress
 
 ### Install Dependencies with
 ```
