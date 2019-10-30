@@ -9,6 +9,9 @@ This project uses a Firebase database in two ways. One is to authenicate a user 
 This project also uses GSAP animations to make the front-end more appealing to the end user as well as to appear modern.
 <br>
 <br>
+VueX is also used to store the state of the cart from the local storage so that the user can access their items that are in the cart when they come to check out where tax is worked out automatically as well as the sub and full totals of the shopping basket. VueX also calculates duplicate items for quantity and merges these items with the quantitiy specified going up by one.
+<br>
+<br>
 To use this project you will have to create a firebase account and link your credentials in the Firebase.js file this is due to the possibility of a user going into my account and altering product records if I leave my Firebase.js file intact with the credentials.
 <br>
 <br>
