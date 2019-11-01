@@ -30,6 +30,8 @@ To use this project you will have to create a firebase account and link your cre
 - [ ] About page
 - [ ] More animations
 - [ ] Fix the login form refresh
+- [ ] Make product page more appealing
+- [ ] Add dashboard for admin
 
 Live link - in progress
 
