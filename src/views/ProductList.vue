@@ -214,7 +214,9 @@ Introduced: {{product.introduced}}
           </div>
         </div>
       </div>
+      <footer-bar></footer-bar>
     </div>
+    <footer-bar></footer-bar>
   </div>
 </template>
 

@@ -5,8 +5,7 @@
 <Login></Login>
 <shopping-cart></shopping-cart>
 <home-animated></home-animated>
-
-
+<footer-bar></footer-bar>
   </div>
 </template>
 

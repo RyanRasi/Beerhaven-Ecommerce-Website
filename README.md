@@ -15,6 +15,22 @@ VueX is also used to store the state of the cart from the local storage so that 
 To use this project you will have to create a firebase account and link your credentials in the Firebase.js file this is due to the possibility of a user going into my account and altering product records if I leave my Firebase.js file intact with the credentials.
 <br>
 <br>
+
+## Checklist
+
+- [X] Authenitcates Login
+- [X] Animated front page
+- [X] Uses Firebase Database to store products in an API
+- [X] Uses Firebase storage to store product pictures
+- [X] Asynchronous (Live) Reload of new products being uploaded
+- [X] Products list appears as cards and looks appealing
+- [X] Prices all automatically update in cart
+- [X] Duplicate products instead add to the quantity
+- [ ] Multipack purchases
+- [ ] About page
+- [ ] More animations
+- [ ] Fix the login form refresh
+
 Live link - in progress
 
 ### Install Dependencies with

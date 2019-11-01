@@ -46,6 +46,7 @@ Vue.component("Navbar", require("./components/Navbar.vue").default);
 Vue.component("add-to-cart", require("./components/AddtoCart.vue").default);
 Vue.component("view-product", require("./components/ViewProduct.vue").default);
 Vue.component("shopping-cart", require("./components/shoppingCart.vue").default);
+Vue.component("footer-bar", require("./components/Footer.vue").default);
 
 import VueCarousel from "vue-carousel";
 Vue.use(VueCarousel);
