@@ -51,7 +51,27 @@ Server usually appears on localhost:8080
 npm run build
 ```
 <br><br>
+### Firebase.js file is required to be amended before initial run
 
+The firebase.js file should have this block of code where the // defines it.
+Inside the quotes is where the config keys should be pasted in which you can retrieve from the Firebase website upon creating a database. Once these are pasted in, the app should work, however you may want to input data through the Firebase website or through the admin page.
+<br>
+
+```javascript
+  var firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  };
+```
+#### Inputing data through the Firebase website 
+Data is entered through creating two collections within the database tab. One called products to store the product information and one called profiles to store the users address, name and phone number. Additionally in the storage tab it is recommended to create a folder titled "products" where the product pictures will be stored.
+
+<br><br>
 #### Donate
 Buy me a coffee to donate if you like
 <br>
