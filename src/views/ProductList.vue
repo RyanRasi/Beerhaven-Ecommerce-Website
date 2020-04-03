@@ -82,7 +82,7 @@
                   <div class="row">
                 <div class="col-md-7" style="padding-top: 10%;">
                   <h1 style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; letter-spacing: 6px; word-spacing: 5.2px; font-weight: 700;">{{product.product_name | uppercase}}</h1>
-                  <h4>{{product.style | uppercase}} || {{product.abv}} || {{product.alcoholunits}}</h4>
+                  <h4>{{product.style | uppercase}} || {{product.abv}}% || {{product.alcoholunits}} Units</h4>
                   <br>
                   <h5 style="color: #93a334;">{{product.tagline}}</h5>
                   <br>
