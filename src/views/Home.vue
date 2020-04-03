@@ -5,6 +5,9 @@
 <Login></Login>
 <shopping-cart></shopping-cart>
 <home-animated></home-animated>
+<slide-show></slide-show>
+
+
 <footer-bar></footer-bar>
   </div>
 </template>
@@ -23,3 +26,8 @@ export default {
   }
 };
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+
+</style>

@@ -1,22 +1,44 @@
 <template>
-  <div class="hello">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">BeerHaven</a>
+  <div class="alert-box">
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Free Delivery for Orders Over £50</strong>
+  <button type="button" class="close px-2 py-1" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"><h2>&times;</h2></span>
+  </button>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+  <a class="navbar-brand text-center" href="#">BeerHaven</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto mx-auto">
       <li class="nav-item">
-        <router-link to="/" class="nav-link" href="#">Home</router-link>
+        <router-link to="/" class="nav-link" href="#">HOME</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/productlist" class="nav-link" href="#">Products</router-link>
+        <router-link to="/productlist" class="nav-link" href="#">BEERS</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/about" class="nav-link" href="#">About</router-link>
+        <router-link to="/productlist" class="nav-link" href="#">TASTES</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/" class="nav-link" href="#">VISIT THE BREWERY</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/" class="nav-link" href="#">STORIES & EVENTS</router-link>
+      </li>
+          <li class="nav-item">
+        <router-link to="/" class="nav-link" href="#">SUBSCRIPTION</router-link>
+      </li>
+          <li class="nav-item">
+        <router-link to="/about" class="nav-link" href="#">ABOUT</router-link>
+      </li>
+              <li class="nav-item">
+        <router-link to="/" class="nav-link" href="#">CONTACT</router-link>
       </li>
     </ul>
 
@@ -52,5 +74,9 @@ import "../js/loginslide.js";
 <style scoped lang="scss">
 form {
   background-color: rgba(0, 0, 0, 0)
+}
+.alert {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 </style>

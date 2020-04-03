@@ -13,6 +13,7 @@
     </header>
     <div class="slider"></div>
   </div>
+
   </transition>
 </template>
 

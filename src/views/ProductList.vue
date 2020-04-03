@@ -78,39 +78,30 @@
                   v-model="product.id"
                   readonly
                 />
-
-                <div class="form-group">
-                  <h2>{{product.product_name | uppercase}}</h2>
-                </div>
-<img :src="product.images" alt width="60%" style=float:left />
-
-                <div class="form-group">
-                  <h5>
-                  {{product.tagline}}
+                <div class="container-fluid">
+                  <div class="row">
+                <div class="col-md-7" style="padding-top: 10%;">
+                  <h1 style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; letter-spacing: 6px; word-spacing: 5.2px; font-weight: 700;">{{product.product_name | uppercase}}</h1>
+                  <h4>{{product.style | uppercase}} || {{product.abv}} || {{product.alcoholunits}}</h4>
                   <br>
-                  
+                  <h5 style="color: #93a334;">{{product.tagline}}</h5>
+                  <br>
+
+                  <h4 style="padding-top: 20%;">Available in 330ml Bottle / 30l Keg</h4>
+
+                </div>
+                <div class="col-md-5 align-self-center">
+                <img :src="product.images" alt width="100%"/>
+                </div>
+                </div>
+                </div>
+
+                <div class="form-group">
+                  <h5 style="padding-top: 10%;">
+                  {{product.description | striphtml}}
                   </h5>
                 </div>
-                                <div class="form-group">
-                  <h6>
-                  Style: {{product.style | uppercase}}
-                  <br>
-                  
-                  </h6>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                  </div>
-
-                  <div class="col-md-6">
-                  </div>
-                </div>
-                <div class="form-group">
-                  {{product.description | striphtml}}
-                </div>
                                   <div class="col-md-6">
-                  
                                 <div class="form-group">
                   <div class="d-flex">
                     <h6 style="padding-top: 20px;">Tags: </h6>
@@ -121,100 +112,65 @@
                 </div>
                 </div>
               </div>
+
               <!-- product sidebar -->
               <div class="col-md-5">
-                <h4 class="display-6">Product Details</h4>
+                <h4 class="display-6"></h4>
                 <hr />
 
-                <h6 class="display-6">Alcohol volume and units</h6>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-ABV: {{product.abv}}
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-Units: {{product.alcoholunits}}
-                    </div>
-                  </div>
-                </div>
-
-                <h6 class="display-6">Ingredients</h6>
-
-                <div class="form-group">
-Ingredients: {{product.ingredients}}
-
-                
-                <div class="row">
-                  
-
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <br>
-                      <h4 class="display-6">Single Bottles</h4>
-                      <div class="input-group input-group-sm mb-3">
-                        
-                          
-                        </div>
-Single bottles available: {{product.singlebottle}} 
-<br>
-Single bottle cost: {{product.singlebottlecost | currency('£') }}
-<br>
-Single bottle size: {{product.singlebottlesize}}
-              <add-to-cart
-                :image="getImage(product.images)"
-                :productId="product.id"
-                :price="product.singlebottlecost"
-                :name="product.product_name"
-              ></add-to-cart>
-<br>
-<br>
-Manufacturer: {{product.manufacturer}}
-<br>
-Country of Origin: {{product.countryoforigin}}
-                      </div>
-                    
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <br>
-                      <h4 class="display-6">Crate/Multipack</h4>
-                      <div class="input-group input-group-sm mb-3">
-                        
-                          
-                        </div>
-Crate available: {{product.crate}} 
-<br>
-Crate cost: {{product.cratecost | currency('£') }}
-<br>
-Crate size: {{product.cratequantity}} bottles/cans
-              <add-to-cart
-                :image="getImage(product.images)"
-                :productId="product.id"
-                :price="product.cratecost"
-                :name="product.product_name"
-              ></add-to-cart>
-<br>
-<br>
-Brewery Location: {{product.brewed}}
-<br>
-Introduced: {{product.introduced}}
-                      </div>
-                    
-</div>
-                  </div>
-                </div>
+                <ul style="list-style-type:none; padding-top: 15%;">
+                <li> <div class="row"> <div class="col-md-4"> <h3>12 X 330ml</h3> </div> <div class="col-md-4"> <h3 style="color: #93a334;">{{product.singlebottlecost | currency('£') }}</h3> </div> <div class="col-md-4"> <add-to-cart :image="getImage(this.product.images)" :productId="this.product.id" :price="this.product.singlebottlecost" :name="this.product.product_name"></add-to-cart> </div> </div> </li>
+                <br><br>
+                <li> <div class="row"> <div class="col-md-4"> <h3>6 X 330ml</h3> </div> <div class="col-md-4"> <h3 style="color: #93a334;">{{product.singlebottlecost | currency('£') }}</h3> </div> <div class="col-md-4"> <add-to-cart :image="getImage(product.images)" :productId="product.id" :price="product.singlebottlecost" :name="product.product_name"></add-to-cart> </div> </div> </li>
+                <br><br>
+                <li> <div class="row"> <div class="col-md-4"> <h3>3 X 330ml</h3> </div> <div class="col-md-4"> <h3 style="color: #93a334;">{{product.singlebottlecost | currency('£') }}</h3> </div> <div class="col-md-4"> <add-to-cart :image="getImage(product.images)" :productId="product.id" :price="product.singlebottlecost" :name="product.product_name"></add-to-cart> </div> </div> </li>
+                <br><br>
+                <li> <div class="row"> <div class="col-md-4"> <h3>1 X 330ml</h3> </div> <div class="col-md-4"> <h3 style="color: #93a334;">{{product.singlebottlecost | currency('£') }}</h3> </div> <div class="col-md-4"> <add-to-cart :image="getImage(product.images)" :productId="product.id" :price="product.singlebottlecost" :name="product.product_name"></add-to-cart> </div> </div> </li>
+                </ul>
               </div>
             </div>
+
+<div class="row">
+  <div class="col-md-4 col-border">
+    <h3>INGREDIENTS</h3>
+  <h5>Ingredients: {{product.ingredients}}</h5>
+  </div>
+   <div class="col-md-4 col-border">
+     <h3>ABOUT</h3>
+     <h5>
+      Country of Origin: {{product.countryoforigin}}
+      <br>
+      Manufacturer: {{product.manufacturer}}
+      <br>
+      Brewery Location: {{product.brewed}}
+      <br>
+      Introduced: {{product.introduced}}
+     </h5>
+  </div>
+   <div class="col-md-4 col-border">
+     <h3>UNIQUE ASPECT</h3>
+     <p>This is a very delicious drink!</p>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-4">
+  <img src="" style="size:80%;" alt="Placeholder Image Goes Here!">
+  </div>
+
+   <div class="col-md-8">
+     <h3 style="text-align:center;">FOOD PAIRINGS</h3>
+     <p>Enjoy this beer with a BBQ on a hot summers day!</p>
+  </div>
+  </div>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-      <footer-bar></footer-bar>
+      
     </div>
     <footer-bar></footer-bar>
   </div>
@@ -355,5 +311,9 @@ tr:nth-child(even) {
 
 .modal-full .modal-content {
     min-height: 80vh;
+}
+
+.col-border{
+  border: 1px solid #ccc;
 }
 </style>

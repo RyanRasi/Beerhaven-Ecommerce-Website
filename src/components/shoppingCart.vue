@@ -49,6 +49,9 @@
           Total Tax (20%) : {{ this.$store.getters.totalTax | currency('£') }}
           <br />
           {{ this.$store.getters.totalQuantity}} Items || Total Price : {{ this.$store.getters.totalPrice | currency('£') }}
+                    <br />
+                    Delivery
+          {{ this.$store.getters.leftTillDelivery}}
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
             <button type="button" class="btn btn-primary" @click="checkout">Checkout</button>

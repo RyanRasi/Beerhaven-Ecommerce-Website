@@ -41,6 +41,20 @@ export default new Vuex.Store({
             });
     
             return totalP;
+          },
+          leftTillDelivery: state => {
+            var deliveryCharge = "";
+            let totalPrice = 0;
+              state.cart.filter((item) => {
+                totalPrice += (item.productPrice * item.productQuantity) + ((item.productPrice * item.productQuantity) * 0.2);
+
+                  if (totalPrice < 50.00) {
+                      deliveryCharge = "Spend " + (50-totalPrice).toFixed(2) + "More To Get Free Delivery!";
+                  } else {
+                      deliveryCharge = "Delivery Is Free!"
+                  }
+              });
+              return deliveryCharge;
           }
       },
 
