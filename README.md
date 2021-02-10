@@ -1,6 +1,10 @@
 # BeerHaven
+
 <br>
+
 This project will be converted to a V2 soon. It should have more up to date technologies and a specific front-end/back-end structure.
+
+<br>
 <br>
 This project is an eccomerce website built with Vue.js as my first use of modern languages and frameworks to create a modern ecommerce website. Previously I created one with PHP, HTML, CSS and Javascript, however I wanted to create a project that uses technologies that most modern businesses use.
 <br>
